@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Burst</title>
+    <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
+    <!-- Google Font Lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- CSS Custom Style -->
+    <style>
+        .lato{
+        font-family: 'Lato', sans-serif;
+    }
+    </style>
+    <!-- Tailwind and Daisy UI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind Custom Style -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'primary-color': '#F85559',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body class="lato">
+
+  <!-- Navbar Section -->
+
+    <nav class="lg:pt-14 lg:pr-60 lg:pl-60 md:pt-14 md:pr-50 md:pl-50">
+          <div class="navbar h-16 rounded-full bg-primary-color content-between">
+            <div class="navbar-start ml-5 invisible md:visible lg:visible">
+              <ul class="flex items-center text-center gap-2 lg:gap-4">
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Shop</a></li>
+                <li><a href="">All Fruits</a></li>
+              </ul>
+            </div>
+            <div class="navbar-cente w-24">
+              <img src="./images/logo.png" alt="" class="w-8 h-8">
+              <a class="btn btn-ghost normal-case text-xl">Fruit Burst</a>
+            </div>
+            <div class="navbar-end">
+              <button class="invisible lg:visible md:visible">
+                <input type="search" name="search" id="text" class="rounded-full h-10 p-2 lg:p-4" placeholder="Search Here...">
+              </button>
+            </div>
+            <div class="dropdown md:invisible lg:invisible">
+              <label tabindex="0" class="btn btn-ghost btn-circle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+              </label>
+              <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <li><a>Homepage</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>About</a></li>
+              </ul>
+            </div>
+          </div>
+    </nav>
+
+    <header></header>
+    <main></main>
+    <footer></footer>
+</body>
+</html>
